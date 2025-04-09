@@ -13,11 +13,19 @@ Este proyecto utiliza visión por computador y modelos de detección para identi
 
 ---
 
-## ⚙️ Instalación
+## 🚀 Ejecutar Parking360 con Docker
+
+Este proyecto usa [`uv`](https://docs.astral.sh/uv) para gestionar dependencias, y Docker para entorno aislado.
+
+### 🐳 Requisitos
+- Docker instalado (`>= 20.10`)
+- (Opcional) Acceso a cámara: `--device=/dev/video0`
+
+### 📦 Build de la imagen
 
 
-git clone https://github.com/tu-usuario/parking360.git
-cd parking360
-python -m venv .venv
-source .venv/bin/activate
-uv run start
+git clone https://github.com/soric91/parkiu_device.git
+cd parkiu_device
+docker build -t parking360 .
+
+docker run --rm -it parking360
