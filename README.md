@@ -24,8 +24,10 @@ Este proyecto usa [`uv`](https://docs.astral.sh/uv) para gestionar dependencias,
 ### 📦 Build de la imagen
 
 
-git clone https://github.com/soric91/parkiu_device.git
-cd parkiu_device
-docker build -t parking360 .
+-git clone https://github.com/soric91/parkiu_device.git
 
-docker run --rm -it parking360
+-cd parkiu_device
+
+-docker build -t parking360 .
+
+-docker run --rm -it parking360
